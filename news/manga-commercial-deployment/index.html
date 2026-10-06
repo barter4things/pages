@@ -15,12 +15,45 @@
     }
     h1 {
       font-size: 1.75rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .byline {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5e5e5;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .byline img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .byline .meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .byline .name {
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+    .byline .role {
+      font-weight: 400;
+      color: #666;
+    }
+    .byline time {
+      color: #777;
     }
     p {
       margin-bottom: 1rem;
     }
-    img {
+    article > img {
       display: block;
       max-width: 100%;
       height: auto;
@@ -37,6 +70,19 @@
 <body>
   <article>
     <h1>MANGA Commercial Deployment</h1>
+
+    <div class="byline">
+      <img src="../../users/alexbarter.jpg" alt="Alex Barter">
+      <div class="meta">
+        <span class="name">Alex Barter <span class="role">· Managing Director</span></span>
+        <span>
+          Published
+          <time datetime="2026-10-06">6 October 2026</time>
+          · Last updated
+          <time datetime="2026-10-06">6 October 2026</time>
+        </span>
+      </div>
+    </div>
 
     <p>
       Sentinel is an enclosed atmosphere that mixes gas, measures and evacuates
